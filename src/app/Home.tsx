@@ -3,19 +3,24 @@ import { Label } from "@/components/ui/label";
 import { AppSidebar } from "@/components/ui/sidebar/AppSidebar";
 import { SidebarContentType } from "@/components/ui/sidebar/utils/types";
 import { useTheme } from "@/theme/hooks/useTheme";
-import { Calendar, Home as HomeIcon, Inbox, Search, Settings } from "lucide-react";
+import { Calendar, Home as HomeIcon, Search, Settings, HelpCircle, LogIn } from "lucide-react";
 
 // Menu items.
 const items: SidebarContentType[] = [
   {
     title: "Home",
-    url: "#",
+    url: "/",
     icon: HomeIcon,
   },
   {
-    title: "Inbox",
-    url: "#",
-    icon: Inbox,
+    title: "About",
+    url: "/about",
+    icon: HelpCircle,
+  },
+  {
+    title: "Sign In",
+    url: "/auth",
+    icon: LogIn,
   },
   {
     title: "Calendar",

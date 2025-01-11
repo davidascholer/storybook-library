@@ -1,11 +1,13 @@
-import Home from "@/routes/Home";
 import { ThemeProvider } from "./theme/ThemeProvider";
+import RouterManager from "./router/RouterManager";
+import Routes from "./router/Routes";
 
 function App() {
-
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <Home />
+      <RouterManager>
+        <Routes />
+      </RouterManager>
     </ThemeProvider>
   );
 }
