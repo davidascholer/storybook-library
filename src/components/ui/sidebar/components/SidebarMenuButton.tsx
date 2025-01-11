@@ -27,7 +27,7 @@ const sidebarMenuButtonVariants = cva(
     }
   )
   
-  const SidebarMenuButton = React.forwardRef<
+  export const SidebarMenuButton = React.forwardRef<
     HTMLButtonElement,
     React.ComponentProps<"button"> & {
       asChild?: boolean
@@ -86,4 +86,3 @@ const sidebarMenuButtonVariants = cva(
   )
   SidebarMenuButton.displayName = "SidebarMenuButton"
   
-  export default SidebarMenuButton;

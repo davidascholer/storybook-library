@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react"
 
-const SidebarMenuBadge = React.forwardRef<
+export const SidebarMenuBadge = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"div">
 >(({ className, ...props }, ref) => (
@@ -21,5 +21,3 @@ const SidebarMenuBadge = React.forwardRef<
   />
 ))
 SidebarMenuBadge.displayName = "SidebarMenuBadge"
-
-export default SidebarMenuBadge;

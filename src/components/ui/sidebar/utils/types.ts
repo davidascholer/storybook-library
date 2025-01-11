@@ -1,3 +1,6 @@
+import { LucideProps } from "lucide-react";
+import { ForwardRefExoticComponent, RefAttributes } from "react";
+
 export type UseSidebarType = {
   state: "expanded" | "collapsed";
   open: boolean;
@@ -16,3 +19,9 @@ export type SidebarType = {
   variant?: "sidebar" | "floating" | "inset";
   collapsible?: "offcanvas" | "icon" | "none";
 };
+
+export type SidebarContentType = {
+  title: string;
+  url: string;
+  icon?: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
+}

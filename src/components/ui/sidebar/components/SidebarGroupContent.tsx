@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
-const SidebarGroupContent = React.forwardRef<
+export const SidebarGroupContent = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"div">
 >(({ className, ...props }, ref) => (
@@ -13,5 +13,3 @@ const SidebarGroupContent = React.forwardRef<
   />
 ))
 SidebarGroupContent.displayName = "SidebarGroupContent"
-
-export default SidebarGroupContent;

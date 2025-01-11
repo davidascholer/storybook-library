@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
-const SidebarMenuSub = React.forwardRef<
+export const SidebarMenuSub = React.forwardRef<
   HTMLUListElement,
   React.ComponentProps<"ul">
 >(({ className, ...props }, ref) => (
@@ -17,5 +17,3 @@ const SidebarMenuSub = React.forwardRef<
   />
 ))
 SidebarMenuSub.displayName = "SidebarMenuSub"
-
-export default SidebarMenuSub;

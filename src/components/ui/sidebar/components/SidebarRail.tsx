@@ -2,7 +2,7 @@ import React from "react"
 import useSidebar from "../hooks/useSidebar"
 import { cn } from "@/lib/utils"
 
-const SidebarRail = React.forwardRef<
+export const SidebarRail = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<"button">
 >(({ className, ...props }, ref) => {
@@ -30,5 +30,3 @@ const SidebarRail = React.forwardRef<
   )
 })
 SidebarRail.displayName = "SidebarRail"
-
-export default SidebarRail;

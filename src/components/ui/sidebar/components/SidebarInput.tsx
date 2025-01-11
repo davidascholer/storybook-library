@@ -2,7 +2,7 @@ import React from "react"
 import { Input } from "../../input"
 import { cn } from "@/lib/utils"
 
-const SidebarInput = React.forwardRef<
+export const SidebarInput = React.forwardRef<
   React.ElementRef<typeof Input>,
   React.ComponentProps<typeof Input>
 >(({ className, ...props }, ref) => {
@@ -19,5 +19,3 @@ const SidebarInput = React.forwardRef<
   )
 })
 SidebarInput.displayName = "SidebarInput"
-
-export default SidebarInput;

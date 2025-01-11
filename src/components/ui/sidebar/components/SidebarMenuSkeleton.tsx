@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils"
 import React from "react"
 import { Skeleton } from "@/components/ui/skeleton"
 
-const SidebarMenuSkeleton = React.forwardRef<
+export const SidebarMenuSkeleton = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"div"> & {
     showIcon?: boolean
@@ -39,5 +39,3 @@ const SidebarMenuSkeleton = React.forwardRef<
   )
 })
 SidebarMenuSkeleton.displayName = "SidebarMenuSkeleton"
-
-export default SidebarMenuSkeleton;

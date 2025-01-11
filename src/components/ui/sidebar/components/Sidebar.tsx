@@ -5,7 +5,7 @@ import { SIDEBAR_WIDTH_MOBILE } from "../utils/constants"
 import { Sheet, SheetContent } from "@/components/ui/sheet"
 import { SidebarType } from "../utils/types"
 
-const Sidebar = React.forwardRef<
+export const Sidebar = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"div"> & SidebarType
 >(
@@ -103,5 +103,3 @@ const Sidebar = React.forwardRef<
   }
 )
 Sidebar.displayName = "Sidebar"
-
-export default Sidebar;

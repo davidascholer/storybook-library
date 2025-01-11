@@ -2,7 +2,7 @@ import React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cn } from "@/lib/utils"
 
-const SidebarGroupLabel = React.forwardRef<
+export const SidebarGroupLabel = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"div"> & { asChild?: boolean }
 >(({ className, asChild = false, ...props }, ref) => {
@@ -23,5 +23,3 @@ const SidebarGroupLabel = React.forwardRef<
 })
 
 SidebarGroupLabel.displayName = "SidebarGroupLabel"
-
-export default SidebarGroupLabel;

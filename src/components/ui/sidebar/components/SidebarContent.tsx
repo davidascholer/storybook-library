@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils"
 import React from "react"
 
-const SidebarContent = React.forwardRef<
+export const SidebarContent = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"div">
 >(({ className, ...props }, ref) => {
@@ -18,5 +18,3 @@ const SidebarContent = React.forwardRef<
   )
 })
 SidebarContent.displayName = "SidebarContent"
-
-export default SidebarContent;

@@ -2,7 +2,7 @@ import React from "react"
 import { Separator } from "@/components/ui/separator"
 import { cn } from "@/lib/utils"
 
-const SidebarSeparator = React.forwardRef<
+export const SidebarSeparator = React.forwardRef<
   React.ElementRef<typeof Separator>,
   React.ComponentProps<typeof Separator>
 >(({ className, ...props }, ref) => {
@@ -16,5 +16,3 @@ const SidebarSeparator = React.forwardRef<
   )
 })
 SidebarSeparator.displayName = "SidebarSeparator"
-
-export default SidebarSeparator;
