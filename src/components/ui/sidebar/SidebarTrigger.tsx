@@ -1,14 +1,14 @@
-import React from "react"
-import { cn } from "@/lib/utils"
-import { PanelLeft } from "lucide-react"
-import useSidebar from "./hooks/useSidebar"
-import Button from "@/components/ui/button/Button"
+import React from "react";
+import { cn } from "@/lib/utils";
+import { PanelLeft } from "lucide-react";
+import useSidebar from "./hooks/useSidebar";
+import { Button } from "@/components/ui/button/Button";
 
 const SidebarTrigger = React.forwardRef<
   React.ElementRef<typeof Button>,
   React.ComponentProps<typeof Button>
 >(({ className, onClick, ...props }, ref) => {
-  const { toggleSidebar } = useSidebar()
+  const { toggleSidebar } = useSidebar();
 
   return (
     <Button
@@ -18,16 +18,16 @@ const SidebarTrigger = React.forwardRef<
       size="icon"
       className={cn("h-7 w-7", className)}
       onClick={(event) => {
-        onClick?.(event)
-        toggleSidebar()
+        onClick?.(event);
+        toggleSidebar();
       }}
       {...props}
     >
       <PanelLeft />
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
-  )
-})
-SidebarTrigger.displayName = "SidebarTrigger"
+  );
+});
+SidebarTrigger.displayName = "SidebarTrigger";
 
 export default SidebarTrigger;

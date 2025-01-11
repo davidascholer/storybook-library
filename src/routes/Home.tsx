@@ -1,4 +1,4 @@
-import Button from "@/components/ui/button/Button";
+import { Button } from "@/components/ui/button/Button";
 import { Label } from "@/components/ui/label";
 import AppSidebar from "@/components/ui/sidebar/AppSidebar";
 import { useTheme } from "@/theme/hooks/useTheme";
