@@ -1,11 +1,11 @@
 import React from 'react';
 
-const About: React.FC = () => {
+const Query: React.FC = () => {
     return (
         <div>
-            About
+            Query
         </div>
     );
 };
 
-export default About;
+export default Query;
