@@ -9,20 +9,24 @@ import NotFound from "@/app/NotFound";
 import AuthLayout from "@/app/auth/AuthLayout";
 import Sidebar from "@/app/Sidebar";
 import Settings from "@/app/Settings";
+import paths from "./paths";
 
 function Routes() {
   return (
     <AppRoutes>
       <Route element={<Sidebar />}>
         <Route index element={<Home />} />
-        <Route path="query" element={<Query />} />
-        <Route path="settings" element={<Settings />} />
-        <Route path="auth">
+        <Route path={paths.query} element={<Query />} />
+        <Route path={paths.settings} element={<Settings />} />
+        <Route path={paths.auth.root}>
           <Route element={<AuthLayout />}>
             <Route index element={<SignIn />} />
-            <Route path="sign-out" element={<SignOut />} />
-            <Route path="sign-up" element={<SignUp />} />
-            <Route path="forgot-password" element={<ForgotPassword />} />
+            <Route path={paths.auth.signOut} element={<SignOut />} />
+            <Route path={paths.auth.signUp} element={<SignUp />} />
+            <Route
+              path={paths.auth.forgotPassword}
+              element={<ForgotPassword />}
+            />
           </Route>
         </Route>
       </Route>

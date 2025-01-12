@@ -1,38 +1,29 @@
 import { AppSidebar } from "@/components/ui/sidebar/AppSidebar";
 import { SidebarContentType } from "@/components/ui/sidebar/utils/types";
-import { Calendar, Home as HomeIcon, Search, Settings, HelpCircle, LogIn } from "lucide-react";
+import paths from "@/router/paths";
+import { Home as HomeIcon, Search, Settings, LogIn } from "lucide-react";
 import { Outlet } from "react-router";
 
 // Menu items.
 const items: SidebarContentType[] = [
   {
     title: "Home",
-    url: "/",
+    url: `/${paths.home}`,
     icon: HomeIcon,
   },
   {
-    title: "About",
-    url: "/about",
-    icon: HelpCircle,
-  },
-  {
-    title: "Sign In",
-    url: "/auth",
-    icon: LogIn,
-  },
-  {
-    title: "Calendar",
-    url: "#",
-    icon: Calendar,
-  },
-  {
-    title: "Search",
-    url: "#",
+    title: "Query",
+    url: `/${paths.query}`,
     icon: Search,
   },
   {
+    title: "Sign In",
+    url: `/${paths.auth.root}`,
+    icon: LogIn,
+  },
+  {
     title: "Settings",
-    url: "#",
+    url: `/${paths.settings}`,
     icon: Settings,
   },
 ];
