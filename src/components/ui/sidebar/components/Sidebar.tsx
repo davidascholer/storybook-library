@@ -30,6 +30,7 @@ export const Sidebar = React.forwardRef<
             className
           )}
           ref={ref}
+          data-testid="sidebar"
           {...props}
         >
           {children}
@@ -50,6 +51,7 @@ export const Sidebar = React.forwardRef<
               } as React.CSSProperties
             }
             side={side}
+            data-testid="sidebar"
           >
             <div className="flex h-full w-full flex-col">{children}</div>
           </SheetContent>
@@ -65,6 +67,7 @@ export const Sidebar = React.forwardRef<
         data-collapsible={state === "collapsed" ? collapsible : ""}
         data-variant={variant}
         data-side={side}
+        data-testid="sidebar"
       >
         {/* This is what handles the sidebar gap on desktop */}
         <div

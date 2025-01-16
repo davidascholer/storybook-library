@@ -8,6 +8,7 @@ export const SidebarMenu = React.forwardRef<
   <ul
     ref={ref}
     data-sidebar="menu"
+    data-testid="sidebar-menu"
     className={cn("flex w-full min-w-0 flex-col gap-1", className)}
     {...props}
   />
