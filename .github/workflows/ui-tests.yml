@@ -2,12 +2,7 @@
 
 name: 'UI Tests'
 
-on: 
-  push:
-    branches:
-      - main
-    paths:
-      - 'src/**/*.stories.@(js|jsx|mjs|ts|tsx)'
+on: push
 
 jobs:
   # Run interaction and accessibility tests
