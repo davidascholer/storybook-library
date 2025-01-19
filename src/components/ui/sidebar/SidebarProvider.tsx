@@ -4,7 +4,7 @@ import { SIDEBAR_COOKIE_MAX_AGE, SIDEBAR_COOKIE_NAME, SIDEBAR_KEYBOARD_SHORTCUT,
 import { UseSidebarType } from "./utils/types"
 import {
     TooltipProvider,
-  } from "@/components/ui/tooltip"
+  } from "@/components/ui/tooltip/Tooltip"
 import { SidebarContext } from "./utils/utils"
 import { cn } from "@/lib/utils"
   
