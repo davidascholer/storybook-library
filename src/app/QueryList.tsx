@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@/components/ui/button/Button";
+import { Button } from "@/components/button/Button";
 import { useGetPokemonListQuery } from "@/state/query/services/apiSlice";
 import { useNavigate } from "react-router";
 
