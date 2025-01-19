@@ -1,5 +1,5 @@
 import React from "react"
-import { Input } from "../../input"
+import { Input } from "../../input/Input"
 import { cn } from "@/lib/utils"
 
 export const SidebarInput = React.forwardRef<

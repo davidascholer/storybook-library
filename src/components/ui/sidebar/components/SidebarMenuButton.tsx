@@ -2,7 +2,7 @@ import React from "react"
 import { VariantProps, cva } from "class-variance-authority"
 import useSidebar from "../hooks/useSidebar"
 import { Slot } from "@radix-ui/react-slot"
-import { TooltipContent, Tooltip, TooltipTrigger } from "@/components/ui/tooltip"
+import { TooltipContent, Tooltip, TooltipTrigger } from "@/components/ui/tooltip/Tooltip"
 import { cn } from "@/lib/utils"
 
 const sidebarMenuButtonVariants = cva(

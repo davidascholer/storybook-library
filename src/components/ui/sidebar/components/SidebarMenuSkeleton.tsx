@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils"
 import React from "react"
-import { Skeleton } from "@/components/ui/skeleton"
+import { Skeleton } from "@/components/ui/skeleton/Skeleton"
 
 export const SidebarMenuSkeleton = React.forwardRef<
   HTMLDivElement,

@@ -2,7 +2,7 @@ import React from "react"
 import useSidebar from "../hooks/useSidebar"
 import { cn } from "@/lib/utils"
 import { SIDEBAR_WIDTH_MOBILE } from "../utils/constants"
-import { Sheet, SheetContent } from "@/components/ui/sheet"
+import { Sheet, SheetContent } from "@/components/ui/sheet/Sheet"
 import { SidebarType } from "../utils/types"
 
 export const Sidebar = React.forwardRef<
